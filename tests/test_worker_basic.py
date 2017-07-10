@@ -59,11 +59,3 @@ class TestWorkerBasic(unittest.TestCase):
         len_to_crawl_after = len(worker.to_crawl)
 
         self.assertEqual(len_to_crawl_after, len_to_crawl_before)
-
-
-
-
-
-
-
-
