@@ -59,3 +59,20 @@ class TestWorkerBasic(unittest.TestCase):
         len_to_crawl_after = len(worker.to_crawl)
 
         self.assertEqual(len_to_crawl_after, len_to_crawl_before)
+
+
+
+
+            def test_worker_contact(self):
+
+                contact = handle_worker_contact(self, worker, address):
+
+                self.assertRaises(ConnectionRefusedError, worker.run)
+
+            def send_mother(self):
+
+                worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
+
+                data = worker.recv(self.buff_size)
+                original_target = None
+                send_to_mother(self, data, original_target)
