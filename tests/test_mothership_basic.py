@@ -11,5 +11,20 @@ class TestMothershipBasic(unittest.TestCase):
 
         mother = MothershipServer("https://www.reddit.com/user/Chrikelnel")
 
-        # Can't connect to mother, so should raise ConnectionRefusedError, but should run everything else
         self.assertRaises(ConnectionRefusedError, mother.run)
+
+
+
+    def test_worker_contact(self):
+
+        contact = handle_worker_contact(self, worker, address):
+
+        self.assertRaises(ConnectionRefusedError, worker.run)
+
+    def send_mother(self):
+
+        worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
+
+        data = worker.recv(self.buff_size)
+        original_target = None
+        send_to_mother(self, data, original_target)
